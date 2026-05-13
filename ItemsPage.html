@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Items Page</title>
+    <link rel="stylesheet" href="Css/Items.css">
+    <link rel="stylesheet" href="Css/Common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="header-left">
+            <img src="image/logo.png" alt="Logo">
+
+            <div id="authLinks" class="auth-links">
+                <a href="Account.php#signup">Sign Up</a>
+                <a href="Account.php#login">Login</a>
+            </div>
+        </div>
+
+        <div>
+            <ul id="nav">
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a class="active" href="ItemsPage.html">Items</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a href="ContactUsPage.html">Contact</a></li>
+                <li>
+                    <a href="Cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="items-hero">
+        <div class="items-hero-text">
+            <span>منتجات طبيعية مختارة بعناية</span>
+            <h1>اكتشف ألذ أنواع العسل ومنتجاتنا المميزة</h1>
+            <p>جمعنا لك تشكيلة أنيقة من العسل الطبيعي والهدايا الفاخرة بتصميم عصري يعكس جودة المنتج وروح المتجر.</p>
+            <div class="items-hero-actions">
+                <a class="items-btn-main" href="#products">ابدأ التسوق</a>
+                <a class="items-btn-second" href="ContactUsPage.html">اطلب مساعدة</a>
+            </div>
+        </div>
+
+        <div class="items-hero-image">
+            <img src="image/image 4.png" alt="Honey Product">
+        </div>
+    </section>
+
+    <section class="items-features">
+        <div class="items-feature-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>توصيل سريع</h3>
+            <p>نجهز الطلبات بسرعة ونوصلها لك بطريقة آمنة ومرتبة.</p>
+        </div>
+
+        <div class="items-feature-card">
+            <i class="fa-solid fa-medal"></i>
+            <h3>جودة عالية</h3>
+            <p>نهتم بالتفاصيل الصغيرة حتى تحصل على منتج يليق بذوقك.</p>
+        </div>
+
+        <div class="items-feature-card">
+            <i class="fa-solid fa-gift"></i>
+            <h3>هدايا أنيقة</h3>
+            <p>خيارات مناسبة للهدايا والمناسبات بتغليف جميل وجذاب.</p>
+        </div>
+    </section>
+
+    <section class="items-products" id="products">
+        <div class="items-title">
+            <h2>منتجاتنا</h2>
+            <p>اختر ما يناسبك من التشكيلة التالية</p>
+        </div>
+
+        <div class="items-grid">
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 1.png" alt="عسل طلح الحجاز">
+                    <span class="item-badge">الأكثر طلبًا</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل طلح الحجاز</h3>
+                    <p>عسل فاخر بطعم غني ورائحة زهرية مميزة، من أجود أنواع العسل الطبيعي في الحجاز.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل طلح الحجاز" data-image="image/item 1.png" data-price="250 ر.س" data-description="عسل فاخر بطعم غني ورائحة زهرية مميزة، من أجود أنواع العسل الطبيعي في الحجاز." data-details="عسل طبيعي فاخر من رحيق أشجار الطلح في الحجاز، يتميز بالقوام الغني والطعم الأصيل، مناسب للاستخدام اليومي والهدايا الراقية.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 2.png" alt="عسل السيال">
+                    <span class="item-badge">جديد</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل السيال</h3>
+                    <p>عسل طبيعي بنكهة خفيفة ومذاق لطيف، مناسب للاستخدام اليومي ولكل أفراد العائلة.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل السيال" data-image="image/item 2.png" data-price="250 ر.س" data-description="عسل طبيعي بنكهة خفيفة ومذاق لطيف، مناسب للاستخدام اليومي ولكل أفراد العائلة." data-details="عسل السيال يتميز بطعم خفيف ولون جميل، وهو خيار ممتاز لمن يحب العسل اليومي بمذاق متوازن وسهل الاستخدام.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 3.png" alt="عسل الكتاد">
+                    <span class="item-badge">مميز</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل الكتاد</h3>
+                    <p>عسل مميز بطابع صحراوي أصيل، بنكهة متوازنة وجودة عالية لعشاق العسل الطبيعي.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل الكتاد" data-image="image/item 3.png" data-price="250 ر.س" data-description="عسل مميز بطابع صحراوي أصيل، بنكهة متوازنة وجودة عالية لعشاق العسل الطبيعي." data-details="عسل الكتاد من الأنواع المميزة بطابعه الطبيعي الصحراوي، ويجمع بين الجودة العالية والطعم الأصيل المناسب لعشاق العسل الفاخر.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 4.png" alt="عسل السدر">
+                    <span class="item-badge">الأكثر طلبًا</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل السدر</h3>
+                    <p>عسل فاخر مشهور بقيمته العالية وطعمه الأصيل، من أكثر الأنواع طلبًا وتميزًا.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل السدر" data-image="image/item 4.png" data-price="250 ر.س" data-description="عسل فاخر مشهور بقيمته العالية وطعمه الأصيل، من أكثر الأنواع طلبًا وتميزًا." data-details="عسل السدر من أشهر أنواع العسل الطبيعي، معروف بجودته العالية ومذاقه الأصيل، ويعد من الخيارات الفاخرة والمحببة للكثير.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 5.png" alt="عسل السمر">
+                    <span class="item-badge">مميز</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل السمر</h3>
+                    <p>عسل داكن بنكهة قوية وغنية، مناسب لمن يفضل الطعم العميق والقوام المركز.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل السمر" data-image="image/item 5.png" data-price="250 ر.س" data-description="عسل داكن بنكهة قوية وغنية، مناسب لمن يفضل الطعم العميق والقوام المركز." data-details="عسل السمر يتميز بلونه الداكن ونكهته القوية وقوامه الغني، وهو مناسب لمن يفضل الطعم المركز والمميز.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="image/item 6.png" alt="عسل السّلَم">
+                    <span class="item-badge">متوفر بكمية محدودة</span>
+                </div>
+                <div class="item-content">
+                    <h3>عسل السّلَم</h3>
+                    <p>عسل طبيعي بطعم هادئ ولمسة زهرية خفيفة، خيار أنيق ومحبب للاستخدام اليومي.</p>
+                    <div class="item-meta">
+                        <span class="item-price">250 ر.س</span>
+                        <span class="item-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="item-actions">
+                        <a class="item-buy" href="Cart.html">أضف للسلة</a>
+                        <a class="item-details" href="#" data-name="عسل السّلَم" data-image="image/item 6.png" data-price="250 ر.س" data-description="عسل طبيعي بطعم هادئ ولمسة زهرية خفيفة، خيار أنيق ومحبب للاستخدام اليومي." data-details="عسل السّلَم يتميز بطعم لطيف ولمسة زهرية خفيفة، وهو خيار ممتاز لمن يبحث عن عسل طبيعي أنيق وخفيف.">تفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="items-offer">
+        <div class="items-offer-text">
+            <h2>خصم خاص على الطلب الأول</h2>
+            <p>استمتع بتجربة تسوق أنيقة مع خصم مميز على أول طلب لك من متجرنا.</p>
+        </div>
+        <a href="Cart.html">استفد من العرض</a>
+    </section>
+
+    <footer class="items-footer">
+        <div class="items-footer-grid">
+            <div class="items-footer-box">
+                <h3>معلومات التواصل</h3>
+                <p>الهاتف: 966500000000+</p>
+                <p>البريد: info@store.com</p>
+                <p>المدينة المنورة، السعودية</p>
+            </div>
+
+            <div class="items-footer-box">
+                <h3>القنوات</h3>
+                <a href="#">واتساب</a>
+                <a href="#">إنستقرام</a>
+                <a href="#">إكس</a>
+                <a href="#">تيك توك</a>
+            </div>
+
+            <div class="items-footer-box">
+                <h3>الدعم الفني</h3>
+                <p>متاح يوميًا من 9 صباحًا إلى 10 مساءً</p>
+                <a href="ContactUsPage.html">تواصل مع الدعم</a>
+            </div>
+        </div>
+
+        <div class="items-copy">
+            <p>© 2026 جميع الحقوق محفوظة - متجرنا</p>
+        </div>
+    </footer>
+
+    <section class="item-modal" id="itemModal">
+        <div class="item-modal-box">
+            <button class="item-modal-close" id="closeModal">x</button>
+
+            <div class="item-modal-image">
+                <img id="modalImage" src="" alt="Product Image">
+            </div>
+
+            <div class="item-modal-content">
+                <h2 id="modalName"></h2>
+                <p class="modal-price" id="modalPrice"></p>
+                <p id="modalDescription"></p>
+                <p id="modalDetails"></p>
+                <a class="modal-buy-btn" href="#">أضف للسلة</a>
+            </div>
+        </div>
+    </section>
+    <script src="auth_nav.js"></script>
+</body>
+
+</html>

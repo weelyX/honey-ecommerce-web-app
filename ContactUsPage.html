@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Css/ContactUsPage.css">
+    <link rel="stylesheet" href="Css/Common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="header-left">
+            <img src="image/logo.png" alt="Logo">
+
+            <div id="authLinks" class="auth-links">
+                <a href="Account.php#signup">Sign Up</a>
+                <a href="Account.php#login">Login</a>
+            </div>
+        </div>
+
+        <div>
+            <ul id="nav">
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="ItemsPage.html">Items</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a class="active" href="ContactUsPage.html">Contact</a></li>
+                <li>
+                    <a href="Cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-hero">
+        <div class="contact-hero-card">
+            <div class="hero-card-box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>دعم سريع</h3>
+                <p>رد سريع على الاستفسارات ومساعدة مباشرة للطلبات والتواصل.</p>
+            </div>
+
+            <div class="hero-card-stats">
+                <div>
+                    <strong>9 ص - 10 م</strong>
+                    <span>أوقات الدعم</span>
+                </div>
+
+                <div>
+                    <strong>7 أيام</strong>
+                    <span>خدمة أسبوعية</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-hero-text">
+            <span>نحن هنا لخدمتك</span>
+            <h1>تواصل معنا بسهولة وفي أي وقت</h1>
+            <p>إذا عندك استفسار عن المنتجات أو الطلبات أو تحتاج مساعدة في اختيار العسل المناسب، يسعدنا تواصلك مع فريقنا.</p>
+
+            <div class="contact-hero-actions">
+                <a class="contact-btn-second" href="#contactInfo">معلومات التواصل</a>
+                <a class="contact-btn-main" href="#contactForm">أرسل رسالتك</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cards" id="contactInfo">
+        <div class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>واتساب</h3>
+            <p>تواصل مباشر وسريع</p>
+            <span>مناسب للردود السريعة</span>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>البريد الإلكتروني</h3>
+            <p>info@store.com</p>
+            <span>للدعم والمتابعة الرسمية</span>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>الهاتف</h3>
+            <p>966500000000+</p>
+            <span>للطلبات والاستفسارات العامة</span>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="contact-side">
+            <div class="contact-side-card">
+                <h3>أوقات العمل</h3>
+                <ul>
+                    <li>
+                        <strong>9:00 ص - 10:00 م</strong>
+                        <span>السبت - الخميس</span>
+                    </li>
+                    <li>
+                        <strong>4:00 م - 10:00 م</strong>
+                        <span>الجمعة</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-side-card">
+                <h3>العنوان</h3>
+                <p>المدينة المنورة، المملكة العربية السعودية</p>
+                <a href="#">عرض الموقع</a>
+            </div>
+
+            <div class="contact-side-card social-card">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-box" id="contactForm">
+            <div class="section-title">
+                <span>أرسل رسالة</span>
+                <h2>نسعد باستقبال استفسارك</h2>
+            </div>
+
+            <form class="contact-form">
+                <div class="contact-row">
+                    <div class="input-box">
+                        <label for="phone">رقم الجوال</label>
+                        <input id="phone" type="text" placeholder="05xxxxxxxx">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="name">الاسم</label>
+                        <input id="name" type="text" placeholder="اكتب اسمك الكامل">
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="input-box">
+                        <label for="subject">نوع الاستفسار</label>
+                        <select id="subject">
+                            <option>استفسار عن منتج</option>
+                            <option>متابعة طلب</option>
+                            <option>اقتراح أو ملاحظة</option>
+                            <option>طلب مساعدة</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input id="email" type="email" placeholder="example@email.com">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-note">
+        <div class="contact-note-text">
+            <h2>جاهزين لخدمتك بكل اهتمام</h2>
+            <p>كل رسالة منكم تهمنا، ونسعى دائمًا لتقديم تجربة أجمل وجودة تواصل أفضل.</p>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <div class="contact-footer-grid">
+            <div class="contact-footer-box">
+                <h3>الدعم</h3>
+                <p>متاح طوال الأسبوع</p>
+                <p>رد سريع على الاستفسارات</p>
+                <a href="#contactForm">أرسل رسالة الآن</a>
+            </div>
+
+            <div class="contact-footer-box">
+                <h3>روابط سريعة</h3>
+                <a href="HomePage.html">الرئيسية</a>
+                <a href="ItemsPage.html">المنتجات</a>
+                <a href="AboutUsPage.html">من نحن</a>
+            </div>
+
+            <div class="contact-footer-box">
+                <h3>معلومات التواصل</h3>
+                <p>الهاتف: 966500000000+</p>
+                <p>البريد: info@store.com</p>
+                <p>المدينة المنورة، السعودية</p>
+            </div>
+        </div>
+
+        <div class="contact-copy">
+            <p>© 2026 جميع الحقوق محفوظة - متجرنا</p>
+        </div>
+    </footer>
+    <script src="auth_nav.js"></script>
+</body>
+
+</html>

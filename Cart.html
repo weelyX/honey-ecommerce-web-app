@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق</title>
+    <link rel="stylesheet" href="Css/Common.css">
+    <link rel="stylesheet" href="Css/Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="header-left">
+            <img src="image/logo.png" alt="Logo">
+
+            <div id="authLinks" class="auth-links">
+                <a href="Account.php#signup">Sign Up</a>
+                <a href="Account.php#login">Login</a>
+            </div>
+        </div>
+
+        <div>
+            <ul id="nav">
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="ItemsPage.html">Items</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a href="ContactUsPage.html">Contact</a></li>
+                <li>
+                    <a href="Cart.html" class="cart-icon active">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cart-hero">
+        <div class="cart-hero-card">
+            <div class="cart-hero-icon">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <h3>اختياراتك بعناية في سلة واحدة</h3>
+            <p>راجع منتجاتك قبل إتمام الطلب، واستمتع بتفاصيل واضحة وخصومات كمية تجعل تجربتك أكثر راحة وأناقة.</p>
+
+            <div class="cart-hero-stats">
+                <div>
+                    <strong>توصيل مجاني عند 200 ر.س</strong>
+                    <span>أكمل طلبك واستمتع بوصوله دون رسوم إضافية</span>
+                </div>
+                <div>
+                    <strong>خصم أجمل مع الكمية</strong>
+                    <span>كلما زادت اختياراتك، أصبحت القيمة أفضل</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-hero-text">
+            <span>سلة التسوق</span>
+            <h1>لمسة أخيرة قبل وصول العسل إليك</h1>
+            <p>هنا تكتمل رحلتك مع منتجاتنا المختارة، راجع سلتك وعدّل تفاصيل طلبك قبل أن يصل إليك مذاق العسل الطبيعي بكل أناقة.</p>
+
+            <div class="cart-hero-actions">
+                <a class="cart-btn-second" href="ItemsPage.html">متابعة التسوق</a>
+                <a class="cart-btn-main" href="#cartArea">عرض السلة</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section" id="cartArea">
+        <div class="cart-container">
+            <div class="cart-title-box">
+                <span>تفاصيل الطلب</span>
+                <h1 class="cart-title">سلة التسوق</h1>
+                <p>كل المنتجات التي اخترتها تظهر هنا مع ملخص واضح للطلب.</p>
+            </div>
+
+            <div id="empty-cart" class="empty-cart">
+                <i class="fa-solid fa-shopping-bag"></i>
+                <h2>سلة التسوق فارغة</h2>
+                <p>ابدأ بإضافة بعض منتجات العسل الطبيعي الفاخر.</p>
+                <a href="ItemsPage.html" class="btn-main">تصفح المنتجات الآن</a>
+            </div>
+
+            <div id="cart-content" class="cart-content">
+                <div id="cart-items" class="cart-items"></div>
+
+                <div class="cart-summary">
+                    <div class="summary-box">
+                        <h3>ملخص الطلب</h3>
+
+                        <div class="summary-row">
+                            <span>عدد المنتجات</span>
+                            <span id="total-items">0</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>المجموع الفرعي</span>
+                            <span id="subtotal">0 ر.س</span>
+                        </div>
+
+                        <div class="summary-row discount-row" id="discount-row" style="display: none;">
+                            <span>خصم الكمية</span>
+                            <span id="total-discount" class="discount">-0 ر.س</span>
+                        </div>
+
+                        <div class="shipping-progress">
+                            <div class="progress-text">
+                                <span>التوصيل المجاني</span>
+                                <span id="shipping-status">يتبقى 200 ر.س</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div id="progress-fill" class="progress-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>الإجمالي النهائي</span>
+                            <span id="total">0 ر.س</span>
+                        </div>
+
+                        <button id="checkoutBtn" class="btn-checkout">
+                            إتمام الطلب <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+
+                        <a href="ItemsPage.html" class="btn-secondary">متابعة التسوق</a>
+                        <button id="clearCartBtn" class="btn-clear">تفريغ السلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended-section">
+                <div class="recommended-heading">
+                    <span>اقتراحات</span>
+                    <h2 class="recommended-title">منتجات قد تعجبك أيضًا</h2>
+                </div>
+
+                <div class="recommended-grid">
+                    <div class="rec-card" data-name="عسل طلح الحجاز" data-image="image/item 1.png">
+                        <img src="image/item 1.png" alt="عسل طلح الحجاز">
+                        <h4>عسل طلح الحجاز</h4>
+                        <p>250 ر.س</p>
+                    </div>
+
+                    <div class="rec-card" data-name="عسل السدر" data-image="image/item 4.png">
+                        <img src="image/item 4.png" alt="عسل السدر">
+                        <h4>عسل السدر</h4>
+                        <p>250 ر.س</p>
+                    </div>
+
+                    <div class="rec-card" data-name="عسل السمر" data-image="image/item 5.png">
+                        <img src="image/item 5.png" alt="عسل السمر">
+                        <h4>عسل السمر</h4>
+                        <p>250 ر.س</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cart-footer">
+        <div class="cart-footer-grid">
+            <div class="cart-footer-box">
+                <h3>معلومات التواصل</h3>
+                <p>الهاتف: 966500000000+</p>
+                <p>البريد: info@store.com</p>
+                <p>المدينة المنورة، السعودية</p>
+            </div>
+
+            <div class="cart-footer-box">
+                <h3>روابط سريعة</h3>
+                <a href="HomePage.html">الرئيسية</a>
+                <a href="ItemsPage.html">المنتجات</a>
+                <a href="AboutUsPage.html">من نحن</a>
+            </div>
+
+            <div class="cart-footer-box">
+                <h3>الدعم</h3>
+                <p>متاح طوال الأسبوع</p>
+                <p>خدمة سريعة للطلبات والاستفسارات</p>
+                <a href="ContactUsPage.html">تواصل معنا</a>
+            </div>
+        </div>
+
+        <div class="cart-copy">
+            <p>© 2026 جميع الحقوق محفوظة - متجرنا</p>
+        </div>
+    </footer>
+
+    <div id="checkoutModal" class="checkout-modal">
+        <div class="checkout-box">
+            <button id="closeCheckoutBtn" class="checkout-close" type="button">&times;</button>
+
+            <h2>إتمام الطلب</h2>
+            <p>أدخل بياناتك وسيتم حفظ الطلب والتواصل معك قريبًا.</p>
+
+            <form id="checkoutForm">
+                <input type="text" id="customerName" placeholder="الاسم الكامل" required>
+                <input type="tel" id="customerPhone" placeholder="رقم الجوال" required>
+                <input type="text" id="customerCity" placeholder="المدينة" required>
+                <textarea id="customerAddress" placeholder="العنوان" required></textarea>
+                <textarea id="customerNotes" placeholder="ملاحظات إضافية"></textarea>
+
+                <button type="submit" class="checkout-submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+    <script src="auth_nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Css/Common.css">
+    <link rel="stylesheet" href="Css/HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="header-left">
+            <img src="image/logo.png" alt="Logo">
+
+            <div id="authLinks" class="auth-links">
+                <a href="Account.php#signup">Sign Up</a>
+                <a href="Account.php#login">Login</a>
+            </div>
+        </div>
+
+        <div>
+            <ul id="nav">
+                <li><a class="active" href="HomePage.html">Home</a></li>
+                <li><a href="ItemsPage.html">Items</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a href="ContactUsPage.html">Contact</a></li>
+                <li>
+                    <a href="Cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="images-section">
+            <div class="images-box">
+                <img src="image/image 1.jpeg">
+                <img src="image/image 3.jpeg">
+            </div>
+        </div>
+
+        <div class="hero-text">
+            <h1>مرحبًا بكم في متجرنا</h1>
+            <p>نقدم عسلاً طبيعيًا ومنتجات مميزة بجودة عالية وأسعار مناسبة.</p>
+            <a href="ItemsPage.html">تسوق الآن</a>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="videos-section">
+        <h2>شاهد منتجاتنا</h2>
+
+        <div class="videos-container">
+            <div class="video-card">
+                <video autoplay muted loop playsinline controls>
+                    <source src="Video/1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline controls>
+                    <source src="Video/1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>معلومات التواصل</h3>
+                <p>الهاتف: 966500000000+</p>
+                <p>البريد: info@store.com</p>
+                <p>العنوان: المدينة المنورة، السعودية</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>القنوات</h3>
+                <a href="#">واتساب</a>
+                <a href="#">إنستقرام</a>
+                <a href="#">إكس</a>
+                <a href="#">تيك توك</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>الدعم الفني</h3>
+                <p>متاح طوال الأسبوع</p>
+                <p>من 9 صباحًا إلى 10 مساءً</p>
+                <a href="#">تواصل مع الدعم</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 جميع الحقوق محفوظة - متجرنا</p>
+        </div>
+    </footer>
+    <script src="auth_nav.js"></script>
+</body>
+
+</html>
