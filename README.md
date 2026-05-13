@@ -56,23 +56,20 @@ http://localhost/honey-ecommerce-web-app/HomePage.html
 
 ## Project Files
 
-```text
-honey-ecommerce-web-app/
-├── HomePage.html
-├── ItemsPage.html
-├── Cart.html
-├── Account.php
-├── Login.php
-├── signup.php
-├── submit_order.php
-├── admin_orders.php
-├── auth_nav.js
-├── database.php
-├── database.sql
-├── Css/
-├── image/
-└── Video/
-```
+- `HomePage.html` — Main landing page for the honey e-commerce website.
+- `ItemsPage.html` — Products page displaying available honey items.
+- `Cart.html` — Shopping cart page for viewing and managing selected products.
+- `Account.php` — User account page for displaying customer-related information.
+- `Login.php` — Login page for registered users.
+- `signup.php` — Registration page for creating new user accounts.
+- `submit_order.php` — Handles order submission and stores order data.
+- `admin_orders.php` — Admin page for viewing and managing customer orders.
+- `auth_nav.js` — JavaScript file for handling authentication-based navigation behavior.
+- `database.php` — Database connection file used to connect the application with MySQL.
+- `database.sql` — SQL file containing the database structure required to run the project.
+- `Css/` — Stylesheets used to design and layout the website pages.
+- `image/` — Image assets used across the website.
+- `Video/` — Video assets used in the project.
 
 ## Notes
 
