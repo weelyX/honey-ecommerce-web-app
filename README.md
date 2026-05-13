@@ -6,6 +6,15 @@ A simple e-commerce web application for selling honey products. The project incl
 
 This project was developed as part of a Web Application Development course. The main goal was to build a functional online store using front-end pages, client-side cart handling, PHP back-end scripts, and a MySQL database schema.
 
+## Live Demo
+
+You can view the static front-end demo here:
+
+[View Live Demo](https://weelyx.github.io/honey-ecommerce-web-app/)
+
+> Note: This live demo is hosted using GitHub Pages and only supports the static front-end pages.  
+> PHP and MySQL features such as login, signup, order submission, and admin order management require running the project locally using XAMPP or another PHP/MySQL server.
+
 ## Features
 
 - Home page with product branding and promotional sections
@@ -56,6 +65,7 @@ http://localhost/honey-ecommerce-web-app/HomePage.html
 
 ## Project Files
 
+- `index.html` — Entry page used to redirect visitors to the main homepage on GitHub Pages.
 - `HomePage.html` — Main landing page for the honey e-commerce website.
 - `ItemsPage.html` — Products page displaying available honey items.
 - `Cart.html` — Shopping cart page for viewing and managing selected products.
