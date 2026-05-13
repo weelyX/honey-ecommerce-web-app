@@ -1,6 +1,7 @@
 # Honey E-Commerce Web App
 
 A simple e-commerce web application for selling honey products. The project includes product browsing, shopping cart functionality, user account registration/login, checkout flow, and an admin orders page.
+[Live Demo](https://weelyx.github.io/honey-ecommerce-web-app/)
 
 ## Project Overview
 
